@@ -1,0 +1,38 @@
+.baseLogin {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.baseLogin h1 {
+    color: #212121;
+}
+
+.baseLogin div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EEE;
+    min-width: 50vw;
+    height: 80vh;
+    margin-bottom: 5rem;
+    padding: 3rem;
+    justify-content: center;
+    position: relative;
+}
+
+.baseLogin div form {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.baseLogin div form input {
+    height: 3rem;
+    width: 50vw;
+}
+
+.baseLogin div form button {
+    height: 5rem;
+}
