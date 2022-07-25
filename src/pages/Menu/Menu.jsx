@@ -60,7 +60,7 @@ const Menu = () => {
                     </div>
                 ) : (
                     <>
-                        {foods.length & !loading ? (
+                        {foods.length ? (
                             foods.map((food, index) => (
                                 <FoodCard food={food} key={index} />
                             ))
