@@ -28,5 +28,100 @@
 .base {
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+.icon {
+    color: #EEE;
+    font-size: 1rem;
+    position: absolute;
+    user-select: none;
+    right: 1.8rem;
+    top: 1rem;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    opacity: 0.7;
+}
+
+.icon:active {
+    opacity: 0.5;
+}
+
+.foodContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    overflow: auto;
+    gap: 2rem;
+    row-gap: 10rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.foodContainer img {
+    width: 100%;
+}
+
+.warningContainer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-left: 4.7rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.warning {
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 99px;
+    text-align: center;
+    color: #212121;
+    background: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.hideForm {
+    display: none;
+}
+
+.form {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 760px) {
+    .foodContainer {
+        position: relative;
+        grid-template-columns: 1fr;
+        width: 70vw;
+        height: 100vh;
+        row-gap: 1rem;
+        overflow: auto;
+    }
+
+}
+
+@media (max-width: 760px) {
+    .container {
+        width: 100vw;
+    }
+
+    .base {
+        height: 100vh;
+        width: 100vw;
+    }
 }
 

@@ -4,8 +4,8 @@ body {
   box-sizing: border-box;
   font-family: 'Fira Sans', sans-serif;
   padding-top: 6rem;
+  overflow: auto;
   background: #232526;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #404040, #232526);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #323232, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }

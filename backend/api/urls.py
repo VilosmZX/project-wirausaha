@@ -8,4 +8,5 @@ urlpatterns = [
     path('token/', views.MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/r/', views.TokenRefreshView.as_view(), name='token_refresh'),
     path('menus/', views.getMenu, name = 'menu'),
-] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+    path('add-menu/', views.addMenu, name = 'addmenu')
+] 

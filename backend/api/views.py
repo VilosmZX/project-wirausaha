@@ -7,6 +7,7 @@ from rest_framework_simplejwt.views import (
 )
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from .serializers import MenuSerializer, Menu
+from rest_framework import status
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
@@ -34,3 +35,13 @@ def getMenu(request):
     serializer = MenuSerializer(menus, many=True)
     return Response(serializer.data)
     
+
+@api_view(['POST'])
+def addMenu(request):
+    menu = MenuSerializer(data=request.data)
+    if menu.is_valid():
+        menu.save()
+        return Response(menu.data, status=status.HTTP_201_CREATED)
+    else:
+        print('error', menu.errors)
+        return Response(menu.errors, status=status.HTTP_400_BAD_REQUEST)

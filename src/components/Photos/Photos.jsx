@@ -32,7 +32,7 @@ const Photos = () => {
 
   return (
     <>
-      <section className={styles.slider}>
+      <div className={styles.slider}>
         <FaArrowAltCircleLeft className={styles['left-arrow']} onClick={prevSlide} />
         <FaArrowAltCircleRight className={styles['right-arrow']} onClick={nextSlide} />
         {images.map((value, index) => (
@@ -42,7 +42,7 @@ const Photos = () => {
             )}
           </div>
         ))}
-      </section>   
+      </div>   
     </>
   )
 }
