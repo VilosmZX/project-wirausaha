@@ -6,7 +6,7 @@ const FoodCard = ({food}) => {
   return (
     <div className={styles.card}>
         <img 
-            src={`http://localhost:8000${food.image}`}
+            src={`https://shopwebbackend1.herokuapp.com${food.image}`}
             alt='Food'
         />
         <div className={styles.info}>

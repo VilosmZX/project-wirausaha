@@ -21,7 +21,7 @@ const Menu = () => {
       data.append('price', price);
       data.append('image', image);
       data.append('owner', user.username);
-      let response = await axios('http://localhost:8000/api/add-menu/', {
+      let response = await axios('https://shopwebbackend1.herokuapp.com/api/add-menu/', {
          method: 'post',
          headers: {
           'content-type': 'multipart/form-data'
@@ -39,7 +39,7 @@ const Menu = () => {
   useEffect(() => {
       setLoading(true);
       (async () => {
-          const response = await fetch(`http://localhost:8000/api/menus/`, {
+          const response = await fetch(`https://shopwebbackend1.herokuapp.com/api/menus/`, {
               method: 'GET',
           });
           const data = await response.json();
