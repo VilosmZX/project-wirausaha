@@ -44,7 +44,6 @@ const Menu = () => {
           });
           const data = await response.json();
           setFoods(data);
-          console.log('foods', foods);
       })();
       setLoading(false);
   }, [foods]);
