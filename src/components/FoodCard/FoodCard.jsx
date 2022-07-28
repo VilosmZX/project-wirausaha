@@ -3,10 +3,11 @@ import styles from './FoodCard.module.css';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const FoodCard = ({food}) => {
+  console.log(food);
   return (
     <div className={styles.card}>
         <img 
-            src={`https://shopwebbackend1.herokuapp.com${food.image}`}
+            src={`http://47.254.249.69:8000${food.image}`}
             alt='Food'
         />
         <div className={styles.info}>
