@@ -7,7 +7,7 @@ const FoodCard = ({food}) => {
   return (
     <div className={styles.card}>
         <img 
-            src={`http://47.254.249.69:8000${food.image}`}
+            src={`http://47.254.249.69${food.image}`}
             alt='Food'
         />
         <div className={styles.info}>
