@@ -21,6 +21,8 @@ const BroadcastForm = ({setCurrentNews, setBroadcasts,  broadcasts, openForm, se
         });
         if(response.status === 201) {
             const data = response.data;
+            const date = new Date(data.date);
+            data.date = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`;
             setBroadcasts([data, ...broadcasts]);
             setCurrentNews(0);
             setOpenForm(!openForm);
