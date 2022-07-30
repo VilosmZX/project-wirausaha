@@ -19,7 +19,7 @@ export const AuthProvider = ({children}) => {
         setIsError(false);
         e.preventDefault()
         console.log('Form submited');
-        let response = await fetch('http://47.254.249.69/api/token/', {
+        let response = await fetch('https://JoshuaRVL.pythonanywhere.com/api/token/', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ export const AuthProvider = ({children}) => {
     }
 
     const updateToken = async () => {
-        let response = await fetch('http://47.254.249.69/api/token/r/', {
+        let response = await fetch('https://JoshuaRVL.pythonanywhere.com/api/token/r/', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'

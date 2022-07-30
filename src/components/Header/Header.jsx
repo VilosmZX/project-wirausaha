@@ -16,12 +16,13 @@ const Header = () => {
   }, [currentHeader])
 
   return (
-    <div className={styles.header}>
-        <div>
-            {headers.map((char, index) => (
-              <span key={index}>{char}</span>
-            ))}
-        </div>
+    <div className={styles.container}>
+      <div className={styles.header}>
+          <div className={styles.headerText}>
+            <h1 data-text='Selamat datang!'>Selamat datang!</h1>
+            <small data-text='Selamat berbelanja'>Selamat berbelanja</small>
+          </div>
+      </div>
     </div>
   )
 }

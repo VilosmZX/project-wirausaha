@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 500;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer input {
+    height: 3rem;
+    width: 50vw;
+}
+
+.hideForm {
+    display: none;
+}

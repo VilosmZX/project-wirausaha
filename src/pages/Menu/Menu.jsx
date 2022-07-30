@@ -10,8 +10,10 @@ const Menu = () => {
   const { user } = useContext(AuthContext);
   const [foods, setFoods] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [done, setDone] = useState(true);
 
   const handleSubmit = async (e) => {
+      setDone(false);
       e.preventDefault();
       const title = e.target.title.value;
       const price = e.target.price.value;
@@ -21,25 +23,26 @@ const Menu = () => {
       data.append('price', price);
       data.append('image', image);
       data.append('owner', user.username);
-      let response = await axios('http://47.254.249.69/api/add-menu/', {
+      let response = await axios('https://JoshuaRVL.pythonanywhere.com/api/add-menu/', {
          method: 'post',
          headers: {
           'content-type': 'multipart/form-data'
          },
          data 
       });
+      console.log(response.status)
       if(response.status === 201) {
-          const data = await response.data();
-          setOpenForm(!openForm);
-          setFoods(foods.push(data));
-          alert('Produk Telah ditambahkan!')
+          const data = response.data;
+          setOpenForm(false);
+          setFoods([...foods, data]);
+          setDone(!done);
       }
   };
 
   useEffect(() => {
       setLoading(true);
       (async () => {
-          const response = await fetch(`http://47.254.249.69/api/menus/`, {
+          const response = await fetch(`https://JoshuaRVL.pythonanywhere.com/api/menus/`, {
               method: 'GET',
           });
           const data = await response.json();
@@ -62,7 +65,7 @@ const Menu = () => {
                     <>
                         {foods.length ? (
                             foods.map((food, index) => (
-                                <FoodCard food={food} key={index} />
+                                <FoodCard food={food} num={index+1} key={index} />
                             ))
                         ) : (
                             <div className={styles.warningContainer}>
@@ -78,7 +81,7 @@ const Menu = () => {
                     <input name='title' type={'text'} placeholder='Nama Produk' required/>
                     <input name='price' type={'number'} placeholder='Harga' required/>
                     <input name='file' accept='image/png, image/jpeg' type={'file'} placeholder='Foto produk' required/>
-                    <button type={'submit'}>Masukan Produk</button>
+                    <button type={'submit'} disabled={!done}>Masukan Produk</button>
                     <button type="reset">Reset</button>
                 </form>
             </div>
