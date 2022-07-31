@@ -12,6 +12,7 @@ const BroadcastContent = ({ bc }) => {
       </div>
       <div className={styles.dateContainer}>
         <span>{bc.date}</span>
+        <span className={styles.time}>{bc.time}</span>
       </div>
     </div>
   );

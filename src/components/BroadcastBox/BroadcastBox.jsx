@@ -22,6 +22,7 @@ const BroadcatBox = () => {
             data.forEach((news, index) => {
                 const date = new Date(news.date);
                 news.date = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`;
+                news.time = `${date.getHours()}:${date.getMinutes()}`;
             })
             setBroadcasts(data);
         })();

@@ -2,9 +2,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: -10rem;
+    bottom: -20rem;
     width: 100vw;
-    
 }
 
 .footerContainer {
@@ -18,6 +17,9 @@
     align-items: center;
     flex-direction: row;
     gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 2rem;
 }
 .socialMedia {
     font-family: 'Russo One';
@@ -35,6 +37,9 @@
         justify-content: flex-start;
         align-items: flex-start;
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: 300;   
+        padding: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 7rem;
     }
 }
