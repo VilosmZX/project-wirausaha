@@ -3,6 +3,9 @@ https://tarkishop.netlify.app
 - Web Prototype, blom ad domain
 - Admin Login ( buat nambah menu sama berita )
 
+yang bikin pusing tuh styling nya. Untuk styling juga dibantu sama 
+MaterialUI.
+
 ## Path
 - / -Home page sama berita
 - /menu -Liat semua menu
