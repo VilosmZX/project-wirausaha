@@ -35,7 +35,7 @@ const Menu = () => {
           const data = response.data;
           setOpenForm(false);
           setFoods([...foods, data]);
-          setDone(!done);
+          setDone(true);
       }
   };
 
@@ -65,7 +65,7 @@ const Menu = () => {
                     <>
                         {foods.length ? (
                             foods.map((food, index) => (
-                                <FoodCard food={food} num={index+1} key={index} />
+                                <FoodCard setFoods={setFoods} foods={foods} food={food} num={index+1} key={index} />
                             ))
                         ) : (
                             <div className={styles.warningContainer}>
@@ -81,7 +81,7 @@ const Menu = () => {
                     <input name='title' type={'text'} placeholder='Nama Produk' required/>
                     <input name='price' type={'number'} placeholder='Harga' required/>
                     <input name='file' accept='image/png, image/jpeg' type={'file'} placeholder='Foto produk' required/>
-                    <button type={'submit'} disabled={!done}>Masukan Produk</button>
+                    <button type={'submit'} disabled={done === false}>Masukan Produk</button>
                     <button type="reset">Reset</button>
                 </form>
             </div>

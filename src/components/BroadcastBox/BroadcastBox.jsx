@@ -54,8 +54,10 @@ const BroadcatBox = () => {
                     <div className={styles.title}>
                         <h2>News</h2>
                         {user && (
-                            <div className={styles.broadcastBtn}>
-                                <FaBroadcastTower size={30} onClick={() => setOpenForm(!openForm)}/>
+                            <div className={styles.buttonContainer}>
+                                <div className={styles.broadcastBtn}>
+                                    <FaBroadcastTower size={30} onClick={() => setOpenForm(!openForm)}/>
+                                </div>
                             </div>
                         )}
                     </div>

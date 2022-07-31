@@ -1,5 +1,5 @@
 :root {
-    --primary: #8c38ff;
+    --primary: #01fe87;
     --light: #EEEEEE;
     --dark: #212121;
 }
@@ -29,7 +29,7 @@ nav {
     z-index: 400;
     background: var(--dark);
     padding: 16px 32px;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 3px solid #01fe87;
 }
 
 .hamburger {
@@ -59,7 +59,7 @@ nav {
 
 .hamburger:hover span:nth-child(2) {
     transform: translateX(10px);
-    background-color: var(--primary);
+    background-color: #01fe87;
 }
 
 .hamburger.isActive span:nth-child(1) {
@@ -76,7 +76,7 @@ nav {
 }
 
 .hamburger.isActive:hover span {
-    background-color: var(--primary);
+    background-color: #01fe87;
 }
 
 .menu {
@@ -97,7 +97,7 @@ nav {
 }
 
 .menu a.isActive, .menu a:hover {
-    background-color: var(--primary);
+    background-color: #01fe87;
 }
 
 .mobileMenuActive {
@@ -109,7 +109,7 @@ nav {
     left: 0;
     bottom: 0;
     background: var(--dark);
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 3px solid #01fe87;
 }
 
 .mobileMenuActive a {
@@ -123,7 +123,7 @@ nav {
 }
 
 .mobileMenuActive a.isActive, .mobileMenuActive a:hover {
-    background-color: var(--primary);
+    background-color: #01fe87;
 }
 
 .mobileMenu {
@@ -162,7 +162,7 @@ nav {
 }
 
 .account:hover {
-    background: var(--primary);
+    background: #01fe87;
 }
 
 sup {

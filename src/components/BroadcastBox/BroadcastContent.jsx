@@ -7,8 +7,12 @@ const BroadcastContent = ({ bc }) => {
       <div className={styles.broadcaster}>
         <span>{bc.broadcaster}</span>
       </div>
-      <span>{bc.body}</span>
-      <span>{bc.date}</span>
+      <div className={styles.bodyContainer}>
+        <span>{bc.body}</span>
+      </div>
+      <div className={styles.dateContainer}>
+        <span>{bc.date}</span>
+      </div>
     </div>
   );
 };

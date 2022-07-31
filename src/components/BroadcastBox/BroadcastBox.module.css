@@ -29,10 +29,11 @@
     display: flex;
     background: #EEE;
     width: 90vw;
-    height: 100%;
+    height: 120%;
     padding: 1rem;
     flex-direction: column;
     border-radius: 20px;
+    border: 2.3px solid #01fe87;
 }
 
 .broadcastBtn {
@@ -44,6 +45,9 @@
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     top: 0.1rem;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .broadcastBtn:hover {
@@ -71,6 +75,7 @@
     background: #212121;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     margin-top: 4rem;
+    position: relative;
 }
 
 .animationHidden {
@@ -87,6 +92,9 @@
 .hiddenNews {
     transition-duration: 3s;
     opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: -9999px;
     display: none;
 }
 
@@ -112,9 +120,17 @@
     transition: 0.3s ease;
 }
 
+.buttonContaner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 @media (max-width: 1200px) {
     .broadcastBox {
         height: 38vh;
     }
+
+
 }

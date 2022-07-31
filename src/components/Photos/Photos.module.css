@@ -33,7 +33,7 @@
 }
 
 .right-arrow:hover {
-    color: var(--primary);
+    color: #01fe87;
     transition: 1s ease;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .left-arrow:hover {
-    color: var(--primary);
+    color: #01fe87;
     transition: 1s ease;
 }
 

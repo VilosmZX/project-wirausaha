@@ -16,20 +16,49 @@
     box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.innerContent span:nth-child(2),
-.innerContent span:nth-child(3) {
+.innerContent .bodyContainer span,
+.innerContent .dateContainer span {
     letter-spacing: 2px;
 }
 
-.innerContent span:nth-child(2) {
+.innerContent .bodyContainer span {
     color: rgb(82, 173, 234);
     font-weight: bolder;
     font-family: 'Antic', sans-serif;
     font-size: 22px;
 }
 
-.innerContent span:nth-child(3) {
+.innerContent .dateContainer span {
     color: #01fe87;
     font-family: 'Antic', sans-serif;
     font-size: 18px;
 }
+
+.bodyContainer {
+    overflow-x: scroll;
+}
+
+@media (max-width: 1200px) {
+
+    .innerContent .bodyContainer {
+        padding-bottom: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .innerContent .bodyContainer span {
+        font-size: 15px;
+    }
+
+    .dateContainer {
+        position: absolute;
+        background: #EEE;
+        padding: 11px;
+        border-radius: 20px;
+        top: -2.7rem;
+        font-weight: bold;
+        right: -1rem;
+        box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+}
+

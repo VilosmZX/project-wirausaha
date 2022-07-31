@@ -4,10 +4,10 @@
     flex-direction: column;
     position: relative;
     width: 80vw;
-    margin-top: 2rem;
-    background: #1488CC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 3rem;
+    background: #01fe87;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #01fe87, #16de81);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #01fe87, #16de81); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 75vh;
     padding: 1rem;
     border-radius: 10px;
@@ -99,7 +99,7 @@
     background: rgba(255, 255, 255, 0.8);
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1000) {
     .foodContainer {
         position: relative;
         grid-template-columns: 1fr;
@@ -109,9 +109,15 @@
         overflow: auto;
     }
 
+
+    .warning {
+        font-size: 0.5rem;
+    }
+
+
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1000) {
     .container {
         width: 85vw;
     }
