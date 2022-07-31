@@ -4,11 +4,11 @@
     flex-direction: column;
     position: relative;
     width: 80vw;
-    margin-top: 3rem;
+    margin-top: 5rem;
     background: #01fe87;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #01fe87, #16de81);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #01fe87, #16de81); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 75vh;
+    height: 80vh;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -57,7 +57,7 @@
     overflow: auto;
     gap: 2rem;
     row-gap: 10rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     padding: 2rem;
     position: relative;
 }
@@ -98,6 +98,20 @@
     left: 0;
     background: rgba(255, 255, 255, 0.8);
 }
+
+.search {
+    position: absolute;
+    top: -1.2rem;
+    left: -10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    padding: 10px;
+    background: #EEE;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Antic', sans-serif;
+}
+
 
 @media (max-width: 1000px) {
     .foodContainer {

@@ -4,9 +4,6 @@ import styles from "./BroadcastContent.module.css";
 const BroadcastContent = ({ bc }) => {
   return (
     <div className={styles.innerContent}>
-      <div className={styles.broadcaster}>
-        <span>{bc.broadcaster}</span>
-      </div>
       <div className={styles.bodyContainer}>
         <span>{bc.body}</span>
       </div>

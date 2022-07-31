@@ -4,6 +4,7 @@ import { FaPlusCircle } from 'react-icons/fa';
 import AuthContext from '../../context/AuthContext';
 import axios from 'axios';
 import FoodCard from '../../components/FoodCard/FoodCard';
+import { Input } from '@mui/material';
 
 const Menu = () => {
   const [openForm, setOpenForm] = useState(false);
@@ -54,7 +55,7 @@ const Menu = () => {
   return (
     <div className={styles.base}>
       <div className={styles.container}>
-        <h1>Terbaru</h1>
+        <h1>Menu</h1>
         {user && <FaPlusCircle className={styles.icon} size={40} onClick={() => setOpenForm(!openForm)}/>}
         <div className={styles.foodContainer}>
                 {loading ? (
