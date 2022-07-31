@@ -23,6 +23,7 @@ const BroadcastForm = ({setCurrentNews, setBroadcasts,  broadcasts, openForm, se
             const data = response.data;
             const date = new Date(data.date);
             data.date = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`;
+            data.time = `${date.getHours()}:${date.getMinutes()}`;
             setBroadcasts([data, ...broadcasts]);
             setCurrentNews(0);
             setOpenForm(!openForm);
