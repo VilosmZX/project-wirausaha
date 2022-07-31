@@ -12,7 +12,7 @@ const FoodCard = ({food, num, setFoods, foods}) => {
 
   const deleteFood = async () => {
     setLoadingDelete(true);
-    const response = await axios(`https://JoshuaRVL.pythonanywhere.com/api/delete-menu/${food.id}`, {
+    const response = await axios(`https://JoshuaRVL.pythonanywhere.com/api/delete-menu/${food.id}/`, {
       method: 'delete'
     });
     if(response.status === 204) {
