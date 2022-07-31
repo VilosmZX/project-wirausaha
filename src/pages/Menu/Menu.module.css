@@ -99,7 +99,7 @@
     background: rgba(255, 255, 255, 0.8);
 }
 
-@media (max-width: 1000) {
+@media (max-width: 1000px) {
     .foodContainer {
         position: relative;
         grid-template-columns: 1fr;
@@ -109,15 +109,25 @@
         overflow: auto;
     }
 
-
-    .warning {
-        font-size: 0.5rem;
+    .warningContainer {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 0;
+        margin-left: 1.7rem;
     }
 
+    .warning {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
 
 }
 
-@media (max-width: 1000) {
+@media (max-width: 1000px) {
     .container {
         width: 85vw;
     }
