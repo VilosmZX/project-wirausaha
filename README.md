@@ -1,3 +1,11 @@
+Projek untuk sekolah. Wirausaha bersama tim saya:
+## Tim 2
+    - Bimo
+    - Joshua
+    - Daniel
+    - Sacca
+    - Gabrielle
+
 https://tarkishop.netlify.app
 
 - Web Prototype, blom ad domain
